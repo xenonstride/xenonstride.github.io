@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX Hub</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="icon" href="https://www.spacex.com/static/images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="heading" style="height: 80px;">
+        <div style="font-size: 2em; margin-top: 10px; text-align: center;"><a href="https://www.spacex.com" target="_blank">SpaceX
+                Hub</a></div>
+    </div>
+    <div class="all-times">
+        <div class="container" id="gmt-7">
+            <div class="zone-container">
+                <div class="current-time"></div>
+                <div class="current-date"></div>
+                <div class="place">San Francisco, California (PDT)</div>
+            </div>
+        </div>
+        <div class="container" id="gmt-5">
+            <div class="zone-container">
+                <div class="current-time"></div>
+                <div class="current-date"></div>
+                <div class="place">Boca Chica, Texas (CST)</div>
+            </div>
+        </div>
+        <div class="container" id="gmt-4">
+            <div class="zone-container">
+                <div class="current-time"></div>
+                <div class="current-date"></div>
+                <div class="place">Cape Canaveral, Florida (EDT)</div>
+            </div>
+        </div>
+        <div class="container" id="local">
+            <div class="zone-container">
+                <div class="current-time"></div>
+                <div class="current-date"></div>
+                <div class="place">Your Timezone</div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </div>
+    <div class="row2">
+        <a class="text" href="https://www.youtube.com/watch?v=Uy9Jn-3vuPs" target="_blank">
+            <div>Previous SpaceX Launch : Starlink v1.0 L23 on April 7 at 12:34 PM EDT (Watch)</div>
+        </a>
+        <div class="text counter">Next SpaceX Launch : Crew-2 on Thursday, April 22 at 6:11 AM EDT</div>
+    </div>
+    <div class="row3">
+        <!-- <div class="left">
+            <a class="twitter-timeline" data-width="300" data-height="500" data-theme="dark"
+                href="https://twitter.com/elonmusk?ref_src=twsrc%5Etfw">Tweets by elonmusk</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div> -->
+        <div class="right">
+            <a class="live-link button-hover" style="width: 100%; background-color: rgb(37, 48, 58);">
+                <div class="link">Reddit Threads</div>
+            </a>
+            <a href="https://www.reddit.com/r/spacex/comments/mrmp1j/crew2_prelaunch_discussion_updates_thread/"
+                class="live-link button-hover" style="width: 100%;" target="_blank">
+                <div class="link">Crew-2 Prelaunch Discussion & Updates Thread</div>
+            </a>
+            <a href="https://www.reddit.com/r/spacex/comments/mk99yw/starship_development_thread_20/"
+                class="live-link button-hover" style="width: 100%;" target="_blank">
+                <div class="link">Starship Development Thread #20</div>
+            </a>
+            <a href="https://www.reddit.com/r/spacex/comments/ms8f1o/nasa_hlsawards_discussion_updates_thread/"
+                class="live-link button-hover" style="width: 100%;" target="_blank">
+                <div class="link">NASA HLS-Awards Discussion & Updates Thread</div>
+            </a>
+            <a href="https://www.reddit.com/r/spacex/comments/mhj2z3/rspacex_thread_index_and_general_discussion_april/"
+                class="live-link button-hover" style="width: 100%;" target="_blank">
+                <div class="link">SpaceX General Discussion [April 2021, #79]</div>
+            </a>
+        </div>
+        <div class="middle">
+            <a class="live-link button-hover" style="width: 100%; font-size: 1.4em; background-color: rgb(37, 48, 58);">
+                <div class="link" style="margin-top: -7px;">Resources</div>
+            </a>
+            <a class="live-link button-hover" href="https://www.youtube.com/watch?v=qCbgoqMcirI" target="_blank">
+                <div class="link">LabPadre Launch Pad Cam</div>
+            </a>
+            <a class="live-link button-hover" href="https://www.youtube.com/watch?v=richjW1jj20&t" target="_blank">
+                <div class="link">LabPadre Sentinel Cam</div>
+            </a>
+            <a class="live-link button-hover" href="https://www.youtube.com/watch?v=sTA0GTgFn5E&t" target="_blank">
+                <div class="link">LabPadre Nerdle Cam</div>
+            </a>
+            <a class="live-link button-hover" href="https://www.youtube.com/watch?v=gnt2wZBg89g" target="_blank">
+                <div class="link">NSF Fleet Cam</div>
+            </a>
+            <a class="live-link button-hover" href="https://www.cameroncounty.us/spacex/" target="_blank">
+                <div class="link" style="font-size: 0.8em; margin-top: -10px;">Road Closures<br>(April 21st)
+                </div>
+            </a>
+            <a class="live-link button-hover" href="https://tfr.faa.gov/tfr2/list.jsp" target="_blank">
+                <div class="link">TFRs (None)</div>
+            </a>
+            <a class="live-link button-hover" href="https://reddit-stream.com/comments/mk99yw/" target="_blank">
+                <div class="link">Reddit Stream</div>
+            </a>
+            <a class="live-link button-hover" href="https://forum.nasaspaceflight.com/index.php?topic=53509"
+                target="_blank">
+                <div class="link" style="margin-top: -5px;">NSF SN15 Updates Thread</div>
+            </a>
+            <a class="live-link button-hover" href="https://chrisbillington.net/starship_timelines.html"
+                target="_blank">
+                <div class="link" style="font-size: 0.8em; margin-top: -10px;">Starship Launch Timelines - <span
+                        style="color: rgb(231, 59, 59);"
+                        onclick="location.href='http://www.reddit.com/user/chrisjbillington'">u/chrisjbillington</span>
+                </div>
+            </a>
+            <a class="live-link button-hover" href="https://i.redd.it/k0xac8z2utt61.jpg" target="_blank">
+                <div class="link" style="font-size: 0.8em; margin-top: 0px; line-height: 15px;">Current status of
+                    prototypes - <span style="color: rgb(231, 59, 59);"
+                        onclick="location.href='https://twitter.com/_brendan_lewis'">Brendan</span><br>(as on 18 April
+                    2021)</div>
+            </a>
+            <a class="live-link button-hover" href="https://pbs.twimg.com/media/EyohAEmVcAEZFQk?format=jpg&name=large"
+                target="_blank">
+                <div class="link" style="font-size: 0.8em; margin-top: -10px;">Raptor Engine Log - <span
+                        style="color: rgb(231, 59, 59);" onclick="location.href='https://twitter.com/artzius'">Artzius</span><br>(as
+                    on 13 April 2021)</div>
+            </a>
+            <a class="live-link button-hover" href="https://twitter.com/RGVaerialphotos" target="_blank">
+                <div class="link">RGV Aerial Photography</div>
+            </a>
+        </div>
+        <div class="left">
+            <a class="live-link button-hover" style="width: 100%; font-size: 1.4em; background-color: rgb(37, 48, 58);">
+                <div class="link" style="margin-top: -7px;">Starship Prototypes Flight Tests</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=bYb3bfA6_sQ"  target="_blank" class="live-link button-hover button-hover">
+                <div class="link">Starhopper - 150m</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=s1HA9LlFNM0" target="_blank" class="live-link button-hover">
+                <div class="link">SN5 - 150m Hop</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=MdAKrzOLQTg" target="_blank" class="live-link button-hover">
+                <div class="link">SN6 - 150m Hop</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=_qwLHlVjRyw" target="_blank" class="live-link button-hover">
+                <div class="link">SN8 - 10Km Hop</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=_zZ7fIkpBgs" target="_blank" class="live-link button-hover">
+                <div class="link">SN9 - 10Km Hop</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=ODY6JWzS8WU" target="_blank" class="live-link button-hover">
+                <div class="link">SN10 - 10Km Hop</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=gjCSJIAKEPM" target="_blank" class="live-link button-hover">
+                <div class="link">SN11 - 10Km Hop</div>
+            </a>
+        </div>
+    </div>
+    <div class="tables">
+        <table class="sn15">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th><strong>Starship SN15</strong>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2021-04-17</td>
+                    <td><a href="https://forum.nasaspaceflight.com/index.php?topic=53509.msg2221954#msg2221954"
+                            rel="noopener nofollow ugc" target="_blank">Raptor SN54
+                            installed</a> (<em class="_7s4syPYtk5hfUIjySXcRE">NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-04-17</td>
+                    <td><a href="https://forum.nasaspaceflight.com/index.php?topic=53509.msg2221954#msg2221954"
+                            rel="noopener nofollow ugc" target="_blank">Raptor SN66
+                            installed</a> (<em class="_7s4syPYtk5hfUIjySXcRE">NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-04-16</td>
+                    <td><a href="https://forum.nasaspaceflight.com/index.php?topic=53509.msg2221710#msg2221710"
+                            rel="noopener nofollow ugc" target="_blank">Raptor SN61
+                            installed</a> (<em class="_7s4syPYtk5hfUIjySXcRE">NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-04-15</td>
+                    <td><a href="https://twitter.com/spacepadreisle/status/1382858583193186306" target="_blank">Raptors
+                            delivered to
+                            vehicle</a>, <a href="https://twitter.com/considercosmos/status/1382907403830665220"
+                            target="_blank">RSN 54, 61,
+                            66</a>
+                        (<em>Twitter</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-04-14</td>
+                    <td><a href="https://forum.nasaspaceflight.com/index.php?topic=53509.msg2220431#msg2220431"
+                            target="_blank">Thrust simulator
+                            removed</a> (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-04-13</td>
+                    <td><a href="https://forum.nasaspaceflight.com/index.php?topic=53509.msg2220067#msg2220067"
+                            target="_blank">Likely header
+                            cryoproof test</a> (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-04-12</td>
+                    <td><a href="https://twitter.com/nasaspaceflight/status/1381714324541046784"
+                            target="_blank">Cryoproof
+                            test</a>
+                        (<em>Twitter</em>), <a
+                            href="https://forum.nasaspaceflight.com/index.php?topic=53509.msg2219655#msg2219655"
+                            target="_blank">additional TPS
+                            tiles</a>, <a
+                            href="https://forum.nasaspaceflight.com/index.php?topic=53509.msg2220039#msg2220039"
+                            target="_blank">better image</a>
+                        (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-04-09</td>
+                    <td>Road closed for ambient pressure testing</td>
+                </tr>
+                <tr>
+                    <td>2021-04-08</td>
+                    <td><a href="https://forum.nasaspaceflight.com/index.php?topic=53509.msg2217796#msg2217796"
+                            target="_blank">Moved to launch
+                            site
+                            and placed on mount A</a> (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-04-02</td>
+                    <td><a href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2215186#msg2215186"
+                            target="_blank">Nose section
+                            mated
+                            with tank section</a> (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-03-31</td>
+                    <td><a href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2214207#msg2214207"
+                            target="_blank">Nose cone
+                            stacked
+                            onto nose quad, both aft flaps installed on tank section, and moved to High Bay</a>
+                        (<em>NSF</em>)</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="sn16">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th><strong>Starship SN16</strong>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2021-04-15</td>
+                    <td><a href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2220980#msg2220980"
+                            target="_blank">Forward dome
+                            stacking†</a> (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-04-14</td>
+                    <td><a href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2220036#msg2220036"
+                            target="_blank">Apparent
+                            stacking ops in Mid Bay†</a>, <a
+                            href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2220424#msg2220424"
+                            target="_blank">downcomer
+                            preparing for installation†</a> (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-04-11</td>
+                    <td><a href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2219158#msg2219158"
+                            target="_blank">Barrel section
+                            with large tile patch†</a> (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-03-28</td>
+                    <td><a href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2212210#msg2212210"
+                            target="_blank">Nose Quad</a>
+                        (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-03-23</td>
+                    <td><a href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2209841#msg2209841"
+                            target="_blank">Nose cone†
+                            inside tent possible for this vehicle</a>, <a
+                            href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2210374#msg2210374"
+                            target="_blank">better
+                            picture</a> (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-02-11</td>
+                    <td><a href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2191147#msg2191147"
+                            target="_blank">Aft dome and leg
+                            skirt mate</a> (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-02-10</td>
+                    <td><a href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2190784#msg2190784"
+                            target="_blank">Aft dome
+                            section</a> (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-02-03</td>
+                    <td><a href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2187968#msg2187968"
+                            target="_blank">Skirt with
+                            legs</a> (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-02-01</td>
+                    <td><a href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2186685#msg2186685"
+                            target="_blank">Nose quad</a>
+                        (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-01-05</td>
+                    <td><a href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2175885#msg2175885"
+                            target="_blank">Mid LOX tank
+                            section</a> and <a
+                            href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2175875#msg2175875"
+                            target="_blank">forward dome
+                            sleeved</a>, <a
+                            href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2176559#msg2176559"
+                            target="_blank">lable</a> (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2020-12-04</td>
+                    <td><a href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2162387#msg2162387"
+                            target="_blank">Common dome
+                            section</a> and <a
+                            href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2162391#msg2162391"
+                            target="_blank">flip</a> (<em>NSF</em>)</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="early">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th><strong>Early
+                            Production</strong>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2021-04-03</td>
+                    <td><strong>BN3</strong>: <a
+                            href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2215442#msg2215442"
+                            target="_blank">Aft tank #5
+                            section</a> (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-04-02</td>
+                    <td><strong>BN3</strong>: <a
+                            href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2215180#msg2215180"
+                            target="_blank">Aft dome
+                            sleeve</a>
+                        (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-03-30</td>
+                    <td><strong>BN3</strong>: <a
+                            href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2213668#msg2213668"
+                            target="_blank">Dome</a> (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-03-28</td>
+                    <td><strong>BN3</strong>: <a
+                            href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2212210#msg2212210"
+                            target="_blank">Forward dome
+                            sleeve</a> (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-04-12</td>
+                    <td><strong>BN2</strong> or later:
+                        <a href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2219437#msg2219437"
+                            target="_blank">Grid fin</a>, <a
+                            href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2192045#msg2192045"
+                            target="_blank">earlier part
+                            sighted</a><sup>[02-14]</sup> (<em>NSF</em>)
+                    </td>
+                </tr>
+                <tr>
+                    <td>2021-04-09</td>
+                    <td><strong>BN2</strong>: <a href="https://youtu.be/44vwohITebE" rel="noopener nofollow ugc"
+                            target="_blank">Forward dome sleeved</a> (<em>YouTube</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-03-27</td>
+                    <td><strong>BN2</strong>: <a href="https://youtu.be/9LKO9CsRB6Y?t=175" rel="noopener nofollow ugc"
+                            target="_blank">Aft dome†</a>
+                        (<em>YouTube</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-01-19</td>
+                    <td><strong>BN2</strong>: <a
+                            href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2180659#msg2180659"
+                            target="_blank">Forward dome</a>
+                        (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-04-10</td>
+                    <td><strong>SN22</strong>: <a href="https://twitter.com/CarterGoode6/status/1380547552567787522"
+                            target="_blank">Leg skirt</a>
+                        (<em>Twitter</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-04-15</td>
+                    <td><strong>SN20</strong>: <a
+                            href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2220901#msg2220901"
+                            target="_blank">Common dome
+                            section</a> (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-04-07</td>
+                    <td><strong>SN20</strong>: <a
+                            href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2217009#msg2217009"
+                            target="_blank">Forward dome</a>
+                        (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-03-07</td>
+                    <td><strong>SN20</strong>: <a
+                            href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2201521#msg2201521"
+                            target="_blank">Leg skirt</a>
+                        (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-02-24</td>
+                    <td><strong>SN19</strong>: <a
+                            href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2195919#msg2195919"
+                            target="_blank">Forward dome
+                            barrel</a> (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-02-19</td>
+                    <td><strong>SN19</strong>: <a
+                            href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2194062#msg2194062"
+                            target="_blank">Methane header
+                            tank</a> (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-03-16</td>
+                    <td><strong>SN18</strong>: <a
+                            href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2206080#msg2206080"
+                            target="_blank">Aft dome section
+                            mated with skirt</a> (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-03-07</td>
+                    <td><strong>SN18</strong>: <a
+                            href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2201521#msg2201521"
+                            target="_blank">Leg skirt</a>
+                        (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-02-25</td>
+                    <td><strong>SN18</strong>: <a
+                            href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2196454#msg2196454"
+                            target="_blank">Common dome</a>
+                        (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-02-19</td>
+                    <td><strong>SN18</strong>: <a
+                            href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2194060#msg2194060"
+                            target="_blank">Barrel section
+                            ("COMM" crossed out)</a> (<em>NSF</em>)</td>
+                </tr>
+                <tr>
+                    <td>2021-02-17</td>
+                    <td><strong>SN18</strong>: <a
+                            href="https://forum.nasaspaceflight.com/index.php?topic=52398.msg2193227#msg2193227"
+                            target="_blank">Nose cone
+                            barrel</a>
+                        (<em>NSF</em>)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="footer" style="color: white; text-align: center; font-size: 1.3em;">Source : <a
+            href="https://www.reddit.com/r/spacex" target="_blank">r/SpaceX</a></div>
+
+    <div style="margin-top: 20px;">
+        <a class="twitter-timeline" data-width="400" data-height="500" data-theme="dark"
+            href="https://twitter.com/elonmusk?ref_src=twsrc%5Etfw">Tweets by Elon Musk</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a class="twitter-timeline" data-width="400" data-height="500" data-theme="dark"
+            href="https://twitter.com/SpaceX?ref_src=twsrc%5Etfw">Tweets by SpaceX</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+</body>
+
+</html>
