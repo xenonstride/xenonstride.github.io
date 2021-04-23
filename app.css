@@ -59,6 +59,10 @@ body{
     border: 3px solid var(--back-main);
 }
 
+.watch{
+    color: red;
+}
+
 .row3{
     width: 100%;
     /* height: 350px; */
